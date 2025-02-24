@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){document.querySelectorAll('a[href^="#"]').forEach((e=>{e.addEventListener("click",(function(e){e.preventDefault();const t=this.getAttribute("href");if("#"===t)window.scrollTo({top:0,behavior:"smooth"});else{const e=document.querySelector(t);e&&e.scrollIntoView({behavior:"smooth",block:"start"})}}))}))}));
+//# sourceMappingURL=smooth-scroll.js.map

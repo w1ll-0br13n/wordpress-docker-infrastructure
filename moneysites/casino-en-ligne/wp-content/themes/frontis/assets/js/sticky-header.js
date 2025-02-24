@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",(function(){const e=headerData.sticky_header,s=headerData.sticky_header_offset,t=document.querySelector(".fb-sticky-header");e&&(t.style.paddingTop=`${s}rem`),t&&t.classList.contains("fb-transparent-header")&&window.addEventListener("scroll",(function(){window.scrollY>0?t.classList.remove("fb-transparent-header"):t.classList.add("fb-transparent-header")})),t&&window.addEventListener("scroll",(function(){window.scrollY>50?t.classList.add("scrolled"):t.classList.remove("scrolled")}))}));
+//# sourceMappingURL=sticky-header.js.map

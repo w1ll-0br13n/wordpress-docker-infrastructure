@@ -1,0 +1,25 @@
+server {
+  listen 80;
+  server_name ${SITE_NAME}.local;
+
+  root /var/www/html/${SITE_NAME};
+  index index.php;
+
+  # Pass the X-Forwarded-Proto header
+  proxy_set_header X-Forwarded-Proto $scheme;
+
+  # Serve static files with correct MIME types
+  location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$ {
+    try_files $uri =404;
+  }
+
+  location / {
+    try_files $uri $uri/ /index.php?$args;
+  }
+
+  location ~ \.php$ {
+    fastcgi_pass ${CONTAINER_NAME}:9000;
+    include fastcgi_params;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+  }
+}

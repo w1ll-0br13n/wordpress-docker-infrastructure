@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/minisites/imaosun/wp-content/themes/sunbrake/lib/browser-detection" isTestSource="false" packagePrefix="Wolfcast" />
+      <sourceFolder url="file://$MODULE_DIR$/minisites/imaosun/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/minisites/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/minisites/wp-includes/SimplePie/src" isTestSource="false" packagePrefix="SimplePie" />
+      <sourceFolder url="file://$MODULE_DIR$/minisites/yakeda/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/moneysites/casino-en-ligne/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/moneysites/casino-en-ligne/wp-includes/SimplePie/src" isTestSource="false" packagePrefix="SimplePie" />
+      <sourceFolder url="file://$MODULE_DIR$/moneysites/jeux-ca/wp-includes" isTestSource="false" packagePrefix="PHPMailer" />
+      <sourceFolder url="file://$MODULE_DIR$/moneysites/jeux-ca/wp-includes/SimplePie/src" isTestSource="false" packagePrefix="SimplePie" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

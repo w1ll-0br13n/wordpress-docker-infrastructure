@@ -1,0 +1,65 @@
+
+.fb-sticky-header > .wp-block-group {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+}
+
+.fb-sticky-header.scrolled > div > div > div {
+    background-color: var(--wp--preset--sticky--bg) !important;
+    transition: background-color 0.1s ease-in-out;
+}
+
+body .fb-transparent-header > div > div > div{
+    background: var(--wp--preset--transparent--bg) !important;
+}
+
+#fb-scroll-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--wp--preset--color--primary-800);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#fb-scroll-to-top.visible {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.fb-banner-hero .fb-hero-banner{
+    margin-top: 288px !important;
+}
+.fb-banner-hero .fb-hero-banner img{
+    margin-top: -288px !important;
+}
+@media (max-width: 1400px) {
+    .fb-banner-hero .fb-hero-banner{
+        margin-top: 22% !important;
+    }
+    .fb-banner-hero .fb-hero-banner img{
+        margin-top: -22% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .fb-banner-hero .fb-hero-banner{
+        margin-top: 23% !important;
+    }
+    .fb-banner-hero .fb-hero-banner img{
+        margin-top: -23% !important;
+    }
+}

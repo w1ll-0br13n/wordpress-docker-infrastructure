@@ -1,0 +1,276 @@
+/*
+Theme Name: Frontis
+Theme URI:  https://frontiswp.com/
+Author: WP Messiah
+Author URI: https://wpmessiah.com/
+Description: Meet Frontis, the lightweight WordPress block theme built for speed and flexibility. Perfect for any project, Frontis offers unlimited customizability through its simple block editor, empowering you to create stunning, fast-loading websites with no hassle. Whether for a blog, business, or portfolio, Frontis provides a robust foundation that scales with your needs, while maintaining great SEO performance. Make a bold statement with Frontis, where speed meets sophistication. A Fast, Highly Customizable Block Theme for WordPress.
+Requires at least: 6.4
+Tested up to: 6.7
+Requires PHP: 7.4
+Version: 1.1.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: frontis
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+.wp-block-categories.custom-style-1 {
+    font-weight: bold;
+    color: #0073aa;
+}
+
+.wp-block-categories.custom-style-2 {
+    font-style: italic;
+    color: #d54e21;
+}
+
+.fb-sticky-header > .wp-block-group {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background: transparent;
+}
+.fb-sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    transition: background 0.3s ease, top 0.3s ease-in-out;
+}
+
+.fb-sticky-header > div > div > div {
+    transition: background-color 0.1s ease-in-out;
+}
+
+.fb-sticky-header.scrolled > div > div > div {
+    background-color: var(--wp--preset--sticky--bg) !important;
+    transition: background-color 0.1s ease-in-out;
+}
+
+body .fb-transparent-header > div > div > div{
+    background: var(--wp--preset--transparent--bg) !important;
+}
+
+#fb-scroll-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--wp--preset--color--primary-800);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0; 
+    visibility: hidden;
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#fb-scroll-to-top.visible {
+    opacity: 1; 
+    visibility: visible; 
+}
+.wp-block-post-author{
+    align-items: center;
+}
+.wp-block-post-author__avatar img{
+    border-radius: 50%;
+}
+.subscribe-form {
+    max-width: 290px;
+    width: 100%;
+}
+
+.subscribe-form p {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+}
+
+
+.footer-bright .subscribe-form button svg path {
+    stroke: #001514;
+}
+
+.footer-bright .subscribe-form button {
+    background: #00F0E4 !important;
+}
+
+.footer-conifer .subscribe-form button {
+    background: #A9E94B !important;
+}
+
+.footer-conifer .subscribe-form button svg path {
+    stroke: #121B03 !important;
+}
+
+.footer-selective-yellow .subscribe-form button {
+    background: #FFBE2E !important;
+}
+
+.footer-selective-yellow .subscribe-form button svg path {
+    stroke: #1F1500 !important;
+}
+
+.footer-selective-blue .subscribe-form button {
+    background: #8054FF !important;
+}
+
+.footer-selective-blue .subscribe-form button svg path {
+    stroke: #fff !important;
+}
+
+
+.subscribe-form button[type="submit"] {
+    position: relative;
+    background: #399CFF;
+    color: #fff;
+    padding: 7px !important;
+    border-radius: 100%;
+    font-size: 18px;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-icon {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.footer-social-icon div {
+    flex-shrink: 0;
+}
+
+
+.mc4wp-form input[type="email"]{
+    position: relative;
+}
+.mc4wp-form input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mc4wp-form input#email {
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 50px;
+    border: 1px solid #E1E3E8;
+    height: 42px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.wp-site-blocks footer {
+    margin-block-start: auto;
+    margin-top: auto;
+}
+
+figure {
+    line-height: 0;
+}
+
+figcaption{
+    line-height: 1.3;
+}
+
+body .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: var(--wp--preset--color--primary) !important;
+}
+
+.wp-block-comment-content.has-p-2-font-size p {
+    font-size: var(--wp--preset--font-size--p-2);
+    margin-left: 56px;
+    margin-bottom: 0;
+}
+.wp-block-comment-reply-link {
+    text-align: right;
+}
+
+
+/* Shared styles for comment form inputs and textarea */
+.comment-form-comment textarea,
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-url input {
+    border: 1px solid var(--wp--preset--color--primary-100);
+    border-radius: var(--wp--preset--spacing--spacing-16);
+    outline: none;
+    box-shadow: none;
+}
+
+/* Focus styles for all inputs and textarea */
+.comment-form-comment textarea:focus,
+.comment-form-author input:focus,
+.comment-form-email input:focus,
+.comment-form-url input:focus {
+    border-color: var(--wp--preset--color--primary-100);
+    box-shadow: none;
+    outline: none;
+}
+ol.wp-block-latest-comments {
+    padding-left: 0;
+}
+
+input:focus-visible {
+    outline: none;
+}
+.theme-accordion .theme-accordion-list {
+    cursor: pointer;
+}
+.theme-accordion p {
+    font-size:  var(--wp--preset--font-size--p-2) !important;
+}
+.contact-info-icon {
+    flex-shrink: 0;
+}
+.frontis-contact-from .wpcf7-form p {
+    margin: 24px 0;
+}
+.frontis-contact-from .wpcf7-form p label {
+    font-weight: 500;
+    color: var(--wp--preset--color--primary-50);
+}
+.frontis-contact-from .wpcf7-form p input,
+.frontis-contact-from .wpcf7-form p textarea {
+    border: 1px solid var(--wp--preset--color--primary-600);
+    padding: 14px 16px;
+    border-radius: 12px;
+    color: var(--wp--preset--color--primary-50);
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--wp--preset--color--primary-700);
+}
+.frontis-contact-from .wpcf7-form p input:focus,
+.frontis-contact-from .wpcf7-form p textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+.frontis-contact-from input.wpcf7-form-control.wpcf7-submit {
+    background-color:var(--wp--preset--color--base);
+    font-size: var(--wp--preset--font-size--p-1);
+    color: var(--wp--preset--color--white);
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.frontis-contact-from .wpcf7-not-valid-tip {
+    font-size: 14px;
+}
+
+.is-single-post-meta {
+    flex-basis: fit-content !important;
+    margin-right: 16px !important;
+}

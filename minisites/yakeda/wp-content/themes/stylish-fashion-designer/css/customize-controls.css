@@ -1,0 +1,341 @@
+#customize-controls .control-section-stylish-fashion-designer .accordion-section-title:hover,
+#customize-controls .control-section-stylish-fashion-designer .accordion-section-title:focus {
+	background-color: #fff;
+}
+.control-section-stylish-fashion-designer .accordion-section-title .button {
+	margin-top:  -4px !important;
+	font-weight: 400 !important;
+	margin-left: 8px !important;
+  padding: 0 10px !important;  
+}
+.rtl .control-section-stylish-fashion-designer .accordion-section-title .button {
+	margin-left:  0;
+	margin-right: 8px;
+}
+.accordion-section-title .button, .accordion-section-title .button-secondary {
+  background: #0073aa;
+  font-size: 12px;
+  font-weight: bold !important;
+  color: #fff;
+}
+
+/* ---------Excerpt & Logo --------- */
+input#_customize-input-stylish_fashion_designer_excerpt_number,
+input#_customize-input-logo_size, 
+input#_customize-input-stylish_fashion_designer_slider_excerpt_number,
+input#_customize-input-stylish_fashion_designer_about_excerpt_number,
+input#_customize-input-stylish_fashion_designer_post_featured_image_custom_width,
+input#_customize-input-stylish_fashion_designer_post_featured_image_custom_height,
+input#_customize-input-stylish_fashion_designer_custom_post_color_width,
+input#_customize-input-stylish_fashion_designer_custom_post_color_height,
+input#_customize-input-stylish_fashion_designer_slider_opacity{
+  width: 100%;
+}
+#customize-controls img {
+  margin-bottom: 10px;
+}
+.customize-control-title {
+  font-size: 16px;
+  color: #0073aa;
+}
+#customize-save-button-wrapper input#save, #customize-save-button-wrapper button#publish-settings {
+  color: #fff;
+  border-radius: 0;
+  font-size: 12px;
+}
+/* ---------FontAwesome Icon Styles--------- */
+.type-icon{
+  overflow: hidden;
+}
+.selected-icon{
+  background: #fff;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #EEE;
+  position: relative;
+  margin-right: 45px;
+  cursor: pointer;
+  font-size: 28px;
+  width: 50px;
+}
+.selected-icon .fa{
+  display: block;
+  line-height: 45px;
+  background: #fff;
+}
+.selected-icon span{
+  position: absolute;
+  background: #fff;
+  right: -45px;
+  top: -1px;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #EEE;
+  font-size: 20px;
+}
+.icon-list{
+  height: 250px;
+  overflow-y: scroll;
+  font-size: 18px;
+  border: 1px solid #EEE;
+  background: #fff;
+  border-right: 0;
+  border-top: 0;
+  padding-bottom: 4%;
+  display: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.icon-list li{
+  float: left;
+  margin: 4% 3% 0;
+  height: 40px;
+  width: 18%;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #EEE;  
+}
+.icon-list li:hover{
+  background: #333;
+  border: 1px solid #333;
+  color: #FFF;
+}
+.icon-list li.icon-active{
+  background: #0073aa;
+  border: 1px solid #0073aa;
+  color: #FFF;
+}
+.stylish-fashion-designer-social-class{
+  display: none;
+}
+.socialInput{
+  padding: 10px;
+  font-size: 16px;
+}
+/* ---------Important Link--------- */
+#customize-control-stylish_fashion_designer_doc_link span a,
+#customize-control-stylish_fashion_designer_demo_links span a,
+#customize-control-stylish_fashion_designer_forum_links span a {
+  display: block;
+  background-color: #6edcf5;
+  color: #0b3240;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px;
+  border: 2px solid #0b3240;
+  border-radius: 10px;
+  text-align: center;
+}
+#customize-control-stylish_fashion_designer_doc_link span a:hover,
+#customize-control-stylish_fashion_designer_demo_links span a:hover,
+#customize-control-stylish_fashion_designer_forum_links span a:hover {
+  background-color: #0b3240;
+  color: #fff;
+}
+#customize-control-stylish_fashion_designer_regular_button_link{
+  border-bottom: 1px solid #8c8f94;
+}
+#_customize-input-stylish_fashion_designer_regular_button_link{
+  margin-bottom: 20px;
+}
+/* ---------Important Link--------- */
+#customize-control-stylish_fashion_designer_doc_link span a,
+#customize-control-stylish_fashion_designer_demo_links span a,
+#customize-control-stylish_fashion_designer_forum_links span a,
+#customize-control-stylish_fashion_designer_review_links span a {
+  display: block;
+  background-color: #6edcf5;
+  color: #0b3240;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding: 10px;
+  border: 2px solid #0b3240;
+  border-radius: 10px;
+  text-align: center;
+}
+#customize-control-stylish_fashion_designer_doc_link span a:hover,
+#customize-control-stylish_fashion_designer_demo_links span a:hover,
+#customize-control-stylish_fashion_designer_forum_links span a:hover,
+#customize-control-stylish_fashion_designer_review_links span a:hover {
+  background-color: #0b3240;
+  color: #fff;
+}
+#accordion-section-stylish_fashion_designer_important_links h3{
+  background-color: #0073aa !important;
+  color: #ffffff !important;
+  border-color: #0073aa !important;
+}
+#accordion-section-stylish_fashion_designer_important_links .accordion-section-title:after{
+  color: #ffffff !important;
+}
+/* Premium Features Css */
+#customize-control-stylish_fashion_designer_slider_premium_info, 
+#customize-control-stylish_fashion_designer_typography_premium_info, 
+#customize-control-stylish_fashion_designer_header_premium_info, 
+#customize-control-stylish_fashion_designer_menu_premium_info, 
+#customize-control-stylish_fashion_designer_layout_premium_info,
+#customize-control-stylish_fashion_designer_global_premium_info,
+#customize-control-stylish_fashion_designer_post_premium_info, 
+#customize-control-stylish_fashion_designer_button_premium_info,
+#customize-control-stylish_fashion_designer_single_post_premium_info,
+#customize-control-stylish_fashion_designer_related_premium_info,
+#customize-control-stylish_fashion_designer_responsive_premium_info, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info, 
+#customize-control-stylish_fashion_designer_footer_premium_info, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info, 
+#customize-control-stylish_fashion_designer_product_section_premium_info{
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fafafa;
+  border: 1px solid #a9a1a1;
+  box-shadow: 0px 0px 12px #a9a1a1;
+  width: auto;
+  margin-bottom: 25px;
+}
+#customize-control-stylish_fashion_designer_slider_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_typography_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_header_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_menu_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_layout_premium_info .customize-control-title,
+#customize-control-stylish_fashion_designer_global_premium_info .customize-control-title,
+#customize-control-stylish_fashion_designer_post_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_button_premium_info .customize-control-title,
+#customize-control-stylish_fashion_designer_single_post_premium_info .customize-control-title,
+#customize-control-stylish_fashion_designer_related_premium_info .customize-control-title,
+#customize-control-stylish_fashion_designer_responsive_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_footer_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info .customize-control-title, 
+#customize-control-stylish_fashion_designer_product_section_premium_info .customize-control-title{
+  font-size: 18px;
+  font-weight: 800;
+  color: #000000;
+  border-bottom: 1px dashed #000000;
+  margin-bottom: 15px;
+}
+#customize-control-stylish_fashion_designer_slider_premium_info ul, 
+#customize-control-stylish_fashion_designer_typography_premium_info ul, 
+#customize-control-stylish_fashion_designer_header_premium_info ul, 
+#customize-control-stylish_fashion_designer_menu_premium_info ul, 
+#customize-control-stylish_fashion_designer_layout_premium_info ul,
+#customize-control-stylish_fashion_designer_global_premium_info ul,
+#customize-control-stylish_fashion_designer_post_premium_info ul, 
+#customize-control-stylish_fashion_designer_button_premium_info ul,
+#customize-control-stylish_fashion_designer_single_post_premium_info ul,
+#customize-control-stylish_fashion_designer_related_premium_info ul,
+#customize-control-stylish_fashion_designer_responsive_premium_info ul, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info ul, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info ul, 
+#customize-control-stylish_fashion_designer_footer_premium_info ul, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info ul, 
+#customize-control-stylish_fashion_designer_product_section_premium_info ul{
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+#customize-control-stylish_fashion_designer_slider_premium_info ul li, 
+#customize-control-stylish_fashion_designer_typography_premium_info ul li, 
+#customize-control-stylish_fashion_designer_header_premium_info ul li, 
+#customize-control-stylish_fashion_designer_menu_premium_info ul li, 
+#customize-control-stylish_fashion_designer_layout_premium_info ul li,
+#customize-control-stylish_fashion_designer_global_premium_info ul li,
+#customize-control-stylish_fashion_designer_post_premium_info ul li, 
+#customize-control-stylish_fashion_designer_button_premium_info ul li,
+#customize-control-stylish_fashion_designer_single_post_premium_info ul li,
+#customize-control-stylish_fashion_designer_related_premium_info ul li,
+#customize-control-stylish_fashion_designer_responsive_premium_info ul li, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info ul li, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info ul li, 
+#customize-control-stylish_fashion_designer_footer_premium_info ul li, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info ul li, 
+#customize-control-stylish_fashion_designer_product_section_premium_info ul li{
+  list-style: square;
+  font-style: normal;
+}
+#customize-control-stylish_fashion_designer_slider_premium_info a, 
+#customize-control-stylish_fashion_designer_typography_premium_info a, 
+#customize-control-stylish_fashion_designer_header_premium_info a, 
+#customize-control-stylish_fashion_designer_menu_premium_info a, 
+#customize-control-stylish_fashion_designer_layout_premium_info a,
+#customize-control-stylish_fashion_designer_global_premium_info a,
+#customize-control-stylish_fashion_designer_post_premium_info a, 
+#customize-control-stylish_fashion_designer_button_premium_info a,
+#customize-control-stylish_fashion_designer_single_post_premium_info a,
+#customize-control-stylish_fashion_designer_related_premium_info a,
+#customize-control-stylish_fashion_designer_responsive_premium_info a, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info a, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info a, 
+#customize-control-stylish_fashion_designer_footer_premium_info a, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info a, 
+#customize-control-stylish_fashion_designer_product_section_premium_info a{
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  display: inline-block;
+}
+#customize-control-stylish_fashion_designer_slider_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_typography_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_header_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_menu_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_layout_premium_info a:hover,
+#customize-control-stylish_fashion_designer_global_premium_info a:hover,
+#customize-control-stylish_fashion_designer_post_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_button_premium_info a:hover,
+#customize-control-stylish_fashion_designer_single_post_premium_info a:hover,
+#customize-control-stylish_fashion_designer_related_premium_info a:hover,
+#customize-control-stylish_fashion_designer_responsive_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_page_not_found_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_woocommerce_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_footer_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_footer_social_icons_premium_info a:hover, 
+#customize-control-stylish_fashion_designer_product_section_premium_info a:hover{
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+#accordion-section-stylish_fashion_designer_example_1 > .accordion-section-title:after {
+  display: none;
+}
+#accordion-section-stylish_fashion_designer_important_links button, #accordion-section-stylish_fashion_designer_important_links button:hover{
+  background: #0073aa !important;
+  color: #fff !important;
+}
+.accordion-section-title button.accordion-trigger:focus{
+  box-shadow: none;
+}
+
+/* Reset Settings */
+#customize-control-stylish_fashion_designer_reset_demo_import_settings, #customize-control-stylish_fashion_designer_reset_color {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  gap: 10px; 
+}
+#customize-control-stylish_fashion_designer_reset_demo_import_settings label, #customize-control-stylish_fashion_designer_reset_color label {
+  font-size: 16px;
+  color: #0073aa;
+  display: block;
+  line-height: 1.75;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+#customize-control-stylish_fashion_designer_reset_demo_import_settings input, #customize-control-stylish_fashion_designer_reset_color input{
+  margin: 0px;
+  padding: 5px;
+  height: 15px;
+}
