@@ -1,16 +1,22 @@
 server {
   listen 80;
   server_name ${SITE_NAME}.local;
+  
+  include mime.types;
+  default_type application/octet-stream;
 
   root /var/www/html/${SITE_NAME};
   index index.php;
 
   # Pass the X-Forwarded-Proto header
   proxy_set_header X-Forwarded-Proto $scheme;
-
-  # Serve static files with correct MIME types
-  location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$ {
-    try_files $uri =404;
+  
+  # Serve static files with correct MIME types  
+  location ~* \.(css|js|png|jpg|jpeg|gif|ico|svg|woff2?|ttf|otf|eot|mp4|webp)$ {
+      root /var/www/html/minisites/${SITE_NAME};
+      access_log off;
+      log_not_found off;
+      expires max;
   }
 
   location / {

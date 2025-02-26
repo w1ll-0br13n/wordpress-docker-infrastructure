@@ -82,11 +82,10 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
-if( strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false )
-    $_SERVER['HTTPS'] = 'on';
-else
-    $_SERVER['HTTPS'] = 'off';
-
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
+	$_SERVER['HTTPS'] = 'on';
+}
+$_SERVER['HTTPS']='off';
 
 /* That's all, stop editing! Happy publishing. */
 

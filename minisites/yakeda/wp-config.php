@@ -56,9 +56,6 @@ define( 'AUTH_SALT',        '}^cO>ZRvpUd*PLp-ZYzM?Ot-:G2)GMG(7Zp_X:i%2YXA65y`l*w
 define( 'SECURE_AUTH_SALT', 'Eo}PtVdpV1q:x|}=I#93J 4/+J=D|25Ymkw.:?RP|IjJZkUh<2#RyA3*w6s,}Qew' );
 define( 'LOGGED_IN_SALT',   '7`f5k6iF4RW,Y]_L%5-!nenPyR#ABT!/)AMRl_c@=oBbK qWCKs*rRDXX,B?JhEF' );
 define( 'NONCE_SALT',       '7|VgyL/F+UJ_OuyF2ie(2KQCoEt7qCQ2q|tV=fX)nU!jH{]xfL_v/ayZ$WDoFLQ^' );
-define( 'WP_DEBUG', true );
-define( 'WP_DEBUG_LOG', true );
-define( 'WP_DEBUG_DISPLAY', false );
 /**#@-*/
 
 /**
@@ -84,11 +81,10 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
-if( strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false )
-    $_SERVER['HTTPS'] = 'on';
-else
-    $_SERVER['HTTPS'] = 'off';
-
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && strpos($_SERVER['HTTP_X_FORWARDED_PROTO'], 'https') !== false) {
+	$_SERVER['HTTPS'] = 'on';
+}
+$_SERVER['HTTPS']='off';
 
 /* That's all, stop editing! Happy publishing. */
 

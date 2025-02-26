@@ -14,33 +14,31 @@ services:
   nginx:
     build: ./nginx
     container_name: wp_nginx
+    volumes:
+      - ./minisites:/var/www/html/minisites/
+      - ./moneysites:/var/www/html/moneysites/
     ports:
       - "80:80"
     depends_on:
       - mysql
+      - casino-en-ligne
+      - jeux-ca
+      - minisites
     networks:
       - wp_network
 
   # High-Traffic Sites (10 isolated containers)
   casino-en-ligne:
-    image: wordpress:php8.3-fpm
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: rootpassword
+    image: wordpress:php7.4-fpm
     volumes:
-      - ./moneysites/casino-en-ligne:/var/www/html/
+      - ./moneysites/casino-en-ligne:/var/www/html/casino-en-ligne/
     networks:
       - wp_network
 
   jeux-ca:
-    image: wordpress:php8.3-fpm
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: rootpassword
+    image: wordpress:php7.4-fpm
     volumes:
-      - ./moneysites/jeux-ca:/var/www/html/
+      - ./moneysites/jeux-ca:/var/www/html/jeux-ca/
     networks:
       - wp_network
 
@@ -48,11 +46,7 @@ services:
 
   # Low-Traffic Sites (100 sites in 1 shared container)
   minisites:
-    image: wordpress:php8.3-fpm
-    environment:
-      WORDPRESS_DB_HOST: mysql
-      WORDPRESS_DB_USER: root
-      WORDPRESS_DB_PASSWORD: rootpassword
+    image: wordpress:php7.4-fpm
     volumes:
       - ./minisites:/var/www/html/
     networks:
